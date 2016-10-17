@@ -1,0 +1,298 @@
+	
+
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+	
+		<!-- a bootstrap css is mandatory -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
+		
+		<style type="text/css">
+
+		
+			.summary-table tr td:nth-child(1){
+    			width:5%;
+			}
+			.summary-table tr td:nth-child(2){
+    			width:20%;
+			}			
+ 			.summary-table tr td:nth-child(3){
+    			width:20%;
+			}
+ 			.summary-table tr td:nth-child(4){
+    			width:10%;
+			}		
+ 			.summary-table tr td:nth-child(5){
+    			width:45%;
+			}		
+			
+			.stub-table tr td:nth-child(1){
+				width:10%;
+			}
+			.stub-table tr td:nth-child(2){				
+				width:60%;
+			}
+	
+			.stub-table tr td:nth-child(3){
+				width:30%;
+			}
+ 	
+			
+			.model-rows-table tr td:nth-child(1){
+				width:20%;
+			} 
+			.model-rows-table tr td:nth-child(2){
+				width:25%;
+			}		
+			.model-rows-table tr td:nth-child(3){
+				width:45%;
+			}		
+ 						
+			
+		</style>
+		
+			
+		<title>
+			ExampleImpl
+		</title>
+	
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		</head>
+		<body>
+		
+		<div class="container">
+			<h1>ExampleImpl</h1>		
+			 			
+			<h2>Operations</h2>		
+						
+				<div>						
+					<table class="table table-bordered table-condensed summary-table">
+						<tbody>
+								<tr>
+									<th>Index</th>
+									<th>Method</th>			
+									<th>Parameters</th>
+									<th>Response Type</th>
+									<th>Description</th>													 									 																										
+								</tr>																					 												
+									<tr>
+										<td><a href="#method1">1</a></td>								
+										<td><a href="#method1">method1</a></td>
+										<td>
+												<table class="table table-condensed table-bordered">
+														<tr>
+															<td>
+																session
+															</td>
+														</tr>
+														<tr>
+															<td>
+																userId
+															</td>
+														</tr>
+												</table>											
+										</td>
+										<td>
+												Method1Result
+										</td>
+										<td>Comment example for method1, session param</td>
+												
+									</tr>								
+						</tbody>
+					</table>	
+				</div>	
+ 
+					
+						<hr/> 
+						<h2><a name="method1">method1</a></h2>						
+						
+	 					<h4>Parameters</h4>		
+						
+				 																
+							<div>				
+								<table class="table table-bordered stub-table">
+									<tbody>
+											<tr>
+												<th>Name</th>																					 
+												<th>Type</th>																					
+											 
+												<th>Description</th>		
+										 																									
+											</tr>	
+												<tr>																	
+													<td>session</td>												 
+													<td>														 
+														<div class="panel panel-default">
+																<div class="panel-heading">Session</div>																																					 		
+				<table class="table table-condensed table-bordered model-rows-table">																								
+					<tr>
+						<th>Property</th>
+						<th>Type</th>						
+						<th>Description</th>						 
+					</tr>
+					<tr>
+						<td>
+							id
+						</td>						
+						 		
+						<td>
+							String
+						</td>
+						 		
+						<td>Session id</td>
+
+					</tr>
+				</table>
+														</div>														  
+													</td>											
+													<td>
+														Comment example for method1, session param
+													</td>
+												 
+												</tr>
+												<tr>																	
+													<td>userId</td>												 
+													<td>														 
+														<div class="panel panel-default">
+																<div class="panel-heading">UserId</div>																																					 		
+				<table class="table table-condensed table-bordered model-rows-table">																								
+					<tr>
+						<th>Property</th>
+						<th>Type</th>						
+						<th>Description</th>						 
+					</tr>
+					<tr>
+						<td>
+							id
+						</td>						
+						 		
+						<td>
+							String
+						</td>
+						 		
+						<td>Id which identifies uniquely the User</td>
+
+					</tr>
+				</table>
+														</div>														  
+													</td>											
+													<td>
+														Comment example for method1, userId param
+													</td>
+												 
+												</tr>
+																					
+									</tbody>						
+														
+								</table>		
+							</div>	
+											
+
+						<h4>Response</h4>			
+												
+							<div>				
+								<table class="table table-bordered stub-table">
+									<tbody>
+											<tr>
+												<th>Name</th>																					 
+												<th>Type</th>		
+											 													
+											</tr>									 
+												<tr>																	
+													<td></td>												 
+													<td>														 
+														<div class="panel panel-default">
+																<div class="panel-heading">Method1Result</div>																																					 		
+				<table class="table table-condensed table-bordered model-rows-table">																								
+					<tr>
+						<th>Property</th>
+						<th>Type</th>						
+						<th>Description</th>						 
+					</tr>
+					<tr>
+						<td>
+							success
+						</td>						
+						 		
+						<td>
+							Boolean
+						</td>
+						 		
+						<td>Flag which indicates whether response contains an error or result</td>
+
+					</tr>
+					<tr>
+						<td>
+							error
+						</td>						
+						 		
+						<td>
+							ErrorResult
+						</td>
+						 		
+						<td>Error returned.</td>
+
+					</tr>
+					<tr>
+						<td>
+							error.code
+						</td>						
+						 		
+						<td>
+							Integer
+						</td>
+						 		
+						<td>Error code.</td>
+
+					</tr>
+					<tr>
+						<td>
+							error.message
+						</td>						
+						 		
+						<td>
+							String
+						</td>
+						 		
+						<td>Error message. Must be short.</td>
+
+					</tr>
+					<tr>
+						<td>
+							error.data
+						</td>						
+						 		
+						<td>
+							String
+						</td>
+						 		
+						<td>Extra info related to the error.</td>
+
+					</tr>
+				</table>
+														</div>														  
+													</td>											
+												 
+												</tr>
+									</tbody>						
+														
+								</table>		
+							</div>	
+											
+
+		 		</div>			
+		</body>
+	</html>
+
+ 
+
+
